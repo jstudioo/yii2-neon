@@ -1,0 +1,145 @@
+
+body{
+    font-family: Futura,Trebuchet MS,Arial,sans-serif;
+    font-size: 12px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 10px;
+    margin-top:10px;
+
+}
+
+.no-border{
+    border:none !important;
+    padding:0 !important;
+}
+.text-bold{
+    font-weight: bold;
+}
+.text-center{
+    text-align: center !important;
+}
+.text-left{
+    text-align: left !important;
+}
+.text-right{
+    text-align: right !important;
+}
+
+.text-indent{
+    padding-left: 13px !important;
+}
+.bg-color-orange{
+    background-color: orange !important;
+    color:#020202;
+}
+.bg-color-blue{
+    background-color: #0075bf !important;
+    vertical-align: middle !important;
+    text-align: center;
+    color:#fff;
+    /*font-size: 20px;*/
+    text-transform: uppercase;
+}
+
+.bg-color-green{
+    background-color: #ACC42A;
+    vertical-align: middle !important;
+    text-align: center;
+    color:#fff;
+    /*font-size: 20px;*/
+    text-transform: uppercase;
+}
+
+
+
+.ttd{
+    width: 90% !important;
+}
+
+.lb-condition{
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle !important;
+    color: #FFF !important;
+}
+.img-condition{
+    display:block; width:100%; height:auto;
+}
+
+
+.text-left {
+    text-align: left;
+}
+.text-right {
+    text-align: right;
+}
+.text-center {
+    text-align: center;
+}
+.text-justify {
+    text-align: justify;
+}
+
+.text-primary{
+    color: #000;
+}
+.text-warning {
+    color: #574802;
+}
+.text-danger {
+    color: #ac1818;
+}
+.text-success {
+    color: #045702;
+}
+
+.text-info {
+    color: #2c7ea1;
+}
+
+@font-face {
+    font-family: Futura;
+    src: url(../futura-normal.woff);
+}
+
+table > tr > td > img{
+    width:100px; height:auto;
+}
+
+.bg-color-base {
+    background-color: #cc0000;
+    color: #fff;
+    vertical-align: middle!important;
+    text-align: center;
+    /* font-size: 20px; */
+    text-transform: uppercase;
+}
+td,th{
+    text-align: left;
+    padding: 5px !important;
+    border-collapse: collapse;
+    border: 1px solid #cc0000;
+    vertical-align: top !important;
+}
+
+.bg-color-base{
+    background-color: #cc0000;
+    color: #fff;
+    vertical-align: middle !important;
+    text-align: center;
+    /*font-size: 20px;*/
+    text-transform: uppercase;
+}
+h3{
+    color:#000 !important;
+    font-weight: bold !important;
+}
+
+.header-img{
+    padding:10px;
+}

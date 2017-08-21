@@ -1,0 +1,735 @@
+/**
+ *
+ * Apply Here your Custom CSS
+ *
+*/
+@media screen and (max-width: 768px) {
+  #header-logo-right{
+    margin-top: 20px;
+  }
+}
+@media screen and (min-width: 768px) {
+  #header-logo-left a{
+    float: left !important;
+    margin-left: 15px;
+  }
+
+  #header-logo-right a{
+    float: right !important;
+  }
+}
+
+/*table*/
+table>a{
+  color: #0075bf !important;
+}
+
+/*pagination*/
+.pagination > .active > a,
+.pagination > .active > span,
+.pagination > .active > a:hover,
+.pagination > .active > span:hover,
+.pagination > .active > a:focus,
+.pagination > .active > span:focus {
+  background-color: #0075bf !important;
+  border:#0075bf !important;
+}
+
+/*datatable tools*/
+button.DTTT_button, div.DTTT_button, a.DTTT_button{
+  background: #0075bf !important;
+  color:#fff !important;
+  border: 1px solid #0075bf !important;
+}
+button.DTTT_button:hover:not(.DTTT_disabled),
+div.DTTT_button:hover:not(.DTTT_disabled),
+a.DTTT_button:hover:not(.DTTT_disabled){
+  background: #da091d !important;
+  color:#fff !important;
+}
+
+/*progress bar*/
+.progress-bar-danger {
+  background: #ed1b2f !important;
+}
+
+/*Form */
+.form-group.has-error .help-block, .form-group.has-error .control-label, .form-group.has-error .radio, .form-group.has-error .checkbox, .form-group.has-error .radio-inline, .form-group.has-error .checkbox-inline, .form-group.has-error.radio label, .form-group.has-error.checkbox label, .form-group.has-error.radio-inline label, .form-group.has-error.checkbox-inline label {
+  color: #ed1b2f !important;
+}
+
+.form-group.has-error .form-control {
+  border-color: #ed1b2f !important;
+}
+
+/*select 2*/
+.select2-container--krajee .select2-selection {
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  color: #555555;
+  font-size: 12px;
+  outline: 0;
+}
+.select2-container--krajee .select2-results__option--highlighted[aria-selected] {
+  background-color:#0075bf !important;
+  color: #fff;
+}
+/*panel*/
+.panel-primary > .panel-heading {
+  background-color:#ed1b2f !important;
+  color: #fff;
+  font-weight: bold;
+}
+.panel-primary > .panel-heading > .panel-options > a{
+  color:#fff !important;
+  font-weight: bold;
+}
+
+
+
+/*loading image sprite*/
+#loader-image { background:#fff; z-index: 999991; width:100%; height:100%; float:left; top: 0; left: 0; right:0; bottom:0; margin:auto; position:absolute; }
+.loader-wrapper { background: none repeat scroll 0 0 #fff; height: 100%; left: 0; position: fixed; top: 0; width: 100%; z-index: 9999999; }
+
+
+.table-head-primary > tr,
+.table-head-primary > tbody > tr{
+  /*background-color:  !important;*/
+}
+.table-head-primary > thead > tr,
+.table-head-primary > thead > tr > th{
+  border-top: 2.25px solid #0075bf !important;
+  background-color:#0075bf !important;
+}
+
+.table-head-primary > tbody > tr > th{
+  background-color:#303641;
+}
+
+.table-head-primary > tr > th,
+.table-head-primary > thead > tr > th,
+.table-head-primary > tbody >tr > th{
+  color: #fff !important;
+  text-align: center;
+  vertical-align: middle;
+  font-weight: bold;
+
+}
+
+.table-head-primary > tr > td,
+.table-head-primary > thead > tr > td,
+.table-head-primary > tbody > tr > td,
+.table-head-primary > tr > td.active:hover,
+.table-head-primary > thead > tr > td.active:hover,
+.table-head-primary > tbody > tr > td.active:hover
+{
+  vertical-align:top;
+  color: #000 !important;
+}
+.table-head-primary > tr:hover,
+.table-head-primary > tbody > tr:hover {
+  background-color: #e8e8e8;
+
+}
+
+.table-head-primary > tr > td:hover,
+.table-head-primary > thead > tr > td:hover,
+.table-head-primary > tbody > tr > td:hover {
+  background-color: #e5e5e5;
+
+}
+
+
+.label-block{
+  width:100%;
+  font-size:15px;
+  font-weight:bold;
+}
+
+.alert{
+  padding: 10px;
+}
+div.dataTables_length select{
+  padding: 6px 10px;
+  outline: 0 none;
+  border: 1px solid #ebebeb;
+  background: #fff none repeat scroll 0 0;
+}
+
+.bg-color-red{
+  background-color: #ed1b2f;
+  color: #fff;
+}
+
+.text-primary{
+  color: #000;
+}
+
+.list-cell__remark{
+  font-size: 11px;
+}
+.tab-pane > table{
+  font-size: 12px !important;
+}
+
+.image-preview > img{
+  display:block; width:175px; height:auto;
+}
+
+.help-block{
+  color : #aaa;
+  font-size:12px;
+}
+
+
+/*.dropdown-menu-right{
+    left:0px !important
+}*/
+
+.checkbox_custom{
+  position:relative !important;
+}
+
+
+
+/**
+ *
+ * Apply Here your Custom CSS
+ *
+*/
+@media screen and (max-width: 768px) {
+  #header-logo-right{
+    margin-top: 20px;
+  }
+}
+@media screen and (min-width: 768px) {
+  #header-logo-left a{
+    float: left !important;
+    margin-left: 15px;
+  }
+
+  #header-logo-right a{
+    float: right !important;
+  }
+}
+
+/*table*/
+table>a{
+  color: #0075bf !important;
+}
+
+/*pagination*/
+.pagination > .active > a,
+.pagination > .active > span,
+.pagination > .active > a:hover,
+.pagination > .active > span:hover,
+.pagination > .active > a:focus,
+.pagination > .active > span:focus {
+  background-color: #ed1b2f !important;
+  border:#ed1b2f !important;
+}
+.pagination > li > a, .pagination > li > span {
+  color: #000;
+  text-decoration: none;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+/*datatable tools*/
+button.DTTT_button, div.DTTT_button, a.DTTT_button{
+  background: #ed1b2f !important;
+  color:#fff !important;
+  border: 1px solid #ed1b2f !important;
+}
+button.DTTT_button:hover:not(.DTTT_disabled),
+div.DTTT_button:hover:not(.DTTT_disabled),
+a.DTTT_button:hover:not(.DTTT_disabled){
+  background: #da091d !important;
+  color:#fff !important;
+}
+
+/*progress bar*/
+.progress-bar-danger {
+  background: #ed1b2f !important;
+}
+
+/*Form */
+.form-group.has-error .help-block, .form-group.has-error .control-label, .form-group.has-error .radio, .form-group.has-error .checkbox, .form-group.has-error .radio-inline, .form-group.has-error .checkbox-inline, .form-group.has-error.radio label, .form-group.has-error.checkbox label, .form-group.has-error.radio-inline label, .form-group.has-error.checkbox-inline label {
+  color: #ed1b2f !important;
+}
+
+.form-group.has-error .form-control {
+  border-color: #ed1b2f !important;
+}
+
+/*select 2*/
+.select2-container--krajee .select2-selection {
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  color: #555555;
+  font-size: 12px;
+  outline: 0;
+}
+.select2-container--krajee .select2-results__option--highlighted[aria-selected] {
+  background-color:#0075bf !important;
+  color: #fff;
+}
+/*panel*/
+.panel-primary > .panel-heading {
+  background-color:#ed1b2f !important;
+  color: #fff;
+  font-weight: bold;
+}
+.panel-primary > .panel-heading > .panel-options > a{
+  color:#fff !important;
+  font-weight: bold;
+}
+
+/*button*/
+/*.btn-danger {
+    background-color:#0075bf !important;
+    border-color: #0075bf !important;
+}
+.btn-danger:hover{
+    background-color:#0075bf !important;
+}*/
+
+/*loading image sprite*/
+#loader-image { background:#fff; z-index: 999991; width:100%; height:100%; float:left; top: 0; left: 0; right:0; bottom:0; margin:auto; position:absolute; }
+.loader-wrapper { background: none repeat scroll 0 0 #fff; height: 100%; left: 0; position: fixed; top: 0; width: 100%; z-index: 9999999; }
+
+
+.table-head-primary > tr,
+.table-head-primary > tbody > tr{
+  /*background-color:  !important;*/
+}
+.table-head-primary > thead > tr,
+.table-head-primary > thead > tr > th{
+  border-top: 2.25px solid #0075bf !important;
+  background-color:#0075bf !important;
+}
+
+.table-head-primary > tbody > tr > th{
+  background-color:#303641;
+}
+
+.table-head-primary > tr > th,
+.table-head-primary > thead > tr > th,
+.table-head-primary > tbody >tr > th{
+  color: #fff !important;
+  text-align: center;
+  vertical-align: middle;
+  font-weight: bold;
+
+}
+
+.table-head-primary > tr > td,
+.table-head-primary > thead > tr > td,
+.table-head-primary > tbody > tr > td,
+.table-head-primary > tr > td.active:hover,
+.table-head-primary > thead > tr > td.active:hover,
+.table-head-primary > tbody > tr > td.active:hover
+{
+  vertical-align:top;
+  color: #000 !important;
+}
+.table-head-primary > tr:hover,
+.table-head-primary > tbody > tr:hover {
+  background-color: #e8e8e8;
+
+}
+
+.table-head-primary > tr > td:hover,
+.table-head-primary > thead > tr > td:hover,
+.table-head-primary > tbody > tr > td:hover {
+  background-color: #e5e5e5;
+
+}
+
+
+.label-block{
+  width:100%;
+  font-size:15px;
+  font-weight:bold;
+}
+
+.alert{
+  padding: 10px;
+}
+div.dataTables_length select{
+  padding: 6px 10px;
+  outline: 0 none;
+  border: 1px solid #ebebeb;
+  background: #fff none repeat scroll 0 0;
+}
+
+.bg-color-red{
+  background-color: #ed1b2f;
+  color: #fff;
+}
+
+.text-primary{
+  color: #000;
+}
+
+.list-cell__remark{
+  font-size: 11px;
+}
+.tab-pane > table{
+  font-size: 12px !important;
+}
+
+.image-preview > img{
+  display:block; width:175px; height:auto;
+}
+
+.help-block{
+  color : #aaa;
+}
+
+.nav.navbar-right{
+  margin-right: 0px;
+}
+.toolbar{
+  margin-bottom: 5px;
+}
+.btn-custom-toolbar {
+  background: #ed1b2f !important;
+  color: #fff !important;
+}
+.btn-custom-toolbar:hover {
+  opacity: 0.8 !important;
+  color: #fff !important;
+}
+
+.language-selector .dropdown-menu  {
+  background-color: #303641 !important;
+  border-color: #454a54 !important;
+  padding: 0 !important;
+  margin-top: 15px !important;
+}
+.language-selector.dropdown .dropdown-menu > li {
+  border-bottom: 1px solid #454a54 !important;
+}
+
+.language-selector.dropdown .dropdown-menu li {
+  color: #aaabae !important;
+  font-size: 12px !important;
+  padding: 0 !important;
+}
+.language-selector.dropdown .dropdown-menu li a:hover {
+  background-color: #2b303a !important;
+  color: #fff !important;
+}
+
+.language-selector.dropdown .dropdown-menu > .caret {
+  position: absolute !important;
+  right: 20px !important;
+  top: -2px !important;
+  border-bottom-width: 4px !important;
+  border-top-width: 0 !important;
+  border-bottom-color: #454a54 !important;
+  margin-left: -2px !important;
+}
+//------------------------
+
+.profile-info .dropdown-menu  {
+  background-color: #303641 !important;
+  border-color: #454a54 !important;
+  padding: 0 !important;
+  margin-top: 15px !important;
+}
+.profile-info.dropdown .dropdown-menu > li {
+  border-bottom: 1px solid #454a54 !important;
+}
+
+.profile-info.dropdown .dropdown-menu li {
+  color: #aaabae !important;
+  font-size: 12px !important;
+  padding: 0 !important;
+}
+.profile-info.dropdown .dropdown-menu li a:hover {
+  background-color: #2b303a !important;
+  color: #fff !important;
+}
+
+.profile-info.dropdown .dropdown-menu > .caret {
+  position: absolute !important;
+  right: 20px !important;
+  top: -4px !important;
+  border-bottom-width: 4px !important;
+  border-top-width: 0 !important;
+  border-bottom-color: #454a54 !important;
+  margin-left: -2px !important;
+}
+body .profile-info.dropdown .dropdown-menu {
+  background: #303641 !important;
+  border-color: #454a54 !important;
+}
+body .profile-info.dropdown .dropdown-menu li a {
+  color: #aaabae !important;
+}
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+  background-color: transparent !important;
+}
+.profile-title{
+  margin-right: 10px;
+}
+
+/*-----------------------------------album image----------------------------------------*/
+
+.album {
+  border: 1px solid #ebebeb;
+  margin-bottom: 30px;
+  -moz-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.04);
+  -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.04);
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.04);
+  -webkit-border-radius: 3px;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 3px;
+  -moz-background-clip: padding;
+  border-radius: 3px;
+  background-clip: padding-box;
+}
+
+.album header {
+  position: relative;
+}
+.album header img {
+  line-height: 1;
+  margin: 0;
+  width: 100%;
+  display: block;
+  max-width: 100%;
+  height: 500px;
+  -webkit-border-radius: 3px 3px 0 0;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 3px 3px 0 0;
+  -moz-background-clip: padding;
+  border-radius: 3px 3px 0 0;
+  background-clip: padding-box;
+}
+
+.album header .album-options {
+  position: absolute;
+  display: block;
+  right: 10px;
+  bottom: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 5px 7px;
+  font-size: 11px;
+  zoom: 1;
+  -webkit-opacity: 0;
+  -moz-opacity: 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-border-radius: 3px;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 3px;
+  -moz-background-clip: padding;
+  border-radius: 3px;
+  background-clip: padding-box;
+  -moz-transition: all 300ms ease-in-out;
+  -webkit-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+.album .album-info {
+  padding: 20px;
+}
+.album .album-info h3 {
+  font-size: 18px;
+  margin: 0;
+}
+.album .album-info p {
+  margin: 0;
+  margin-top: 10px;
+  color: #80858e;
+}
+.album footer {
+  border-top: 1px solid #f0f0f0;
+  display: block;
+}
+.album footer:after {
+  content: " ";
+  display: table;
+}
+.album footer .album-images-count, .album footer .album-options {
+  padding: 12px 15px;
+  float: left;
+  color: #8d929a;
+}
+.album footer .album-options {
+  float: right;
+  border-left: 1px solid #f0f0f0;
+  padding: 7px 10px;
+  color: #8d929a;
+}
+.album footer .album-options a {
+  padding: 4px 5px;
+  -moz-transition: all 300ms ease-in-out;
+  -webkit-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+  color: #8d929a;
+  display: inline-block;
+  border-radius: 3px;
+  background-clip: padding-box;
+}
+
+.album footer .album-images-count a + a, .album footer .album-options a + a {
+  margin-left: 10px;
+}
+
+
+.table-bordered > thead > tr > th, .table-bordered > thead > tr > td {
+  background-color : #ed1b2f;
+  color: white !important;
+  border: 1px solid white;
+}
+
+.table-bordered > thead > tr > th > a, .table-bordered > thead > tr > td > a{
+  color: white !important;
+}
+
+.btn-danger {
+  background-color: #ed1b2f !important;
+  border-color:  #ed1b2f !important;
+}
+
+.btn-danger:hover, .btn-danger:focus {
+  background-color: white !important;
+  border-color:  #ed1b2f !important;
+  color: #ed1b2f !important;
+}
+
+.btn-success {
+  background-color: #acc42a !important;
+  border-color:  #acc42a !important;
+}
+
+.btn-success:hover, .btn-success:focus {
+  background-color: white !important;
+  border-color:  #acc42a !important;
+  color: #acc42a !important;
+}
+
+.btn-info {
+  background-color: #006cb8 !important;
+  border-color:  #006cb8 !important;
+}
+
+.btn-info:hover, .btn-info:focus {
+  background-color: white !important;
+  border-color:  #006cb8 !important;
+  color: #006cb8 !important;
+}
+
+.form-group.has-success .form-control {
+  border-color: #acc42a !important;
+}
+.form-group.has-success .help-block, .form-group.has-success .control-label, .form-group.has-success .radio, .form-group.has-success .checkbox, .form-group.has-success .radio-inline, .form-group.has-success .checkbox-inline, .form-group.has-success.radio label, .form-group.has-success.checkbox label, .form-group.has-success.radio-inline label, .form-group.has-success.checkbox-inline label{
+  color: #acc42a !important;
+}
+
+.form-group.has-error .form-control{
+  border-color: #ed1b2f !important;
+}
+.form-group.has-error .help-block, .form-group.has-error .control-label, .form-group.has-error .radio, .form-group.has-error .checkbox, .form-group.has-error .radio-inline, .form-group.has-error .checkbox-inline, .form-group.has-error.radio label, .form-group.has-error.checkbox label, .form-group.has-error.radio-inline label, .form-group.has-error.checkbox-inline label{
+  color: #ed1b2f !important;
+}
+
+.user-info{
+  margin-top: 10px;
+}
+.profile-info.dropdown > a img{
+  border: 1px solid #f5f5f5;
+}
+
+.has-error .select2-container--bootstrap .select2-dropdown, .has-error .select2-container--bootstrap .select2-selection{
+  border-color: #ed1b2f !important;
+}
+
+.select2-container--bootstrap .select2-selection--multiple .select2-selection__rendered{
+  border-color: #acc42a !important;
+}
+body .profile-info.dropdown .dropdown-menu{
+  background: white !important;
+  border: 1px solid black !important;
+  color: black !important;
+}
+body .profile-info.dropdown .dropdown-menu li a{
+  color: black !important;
+}
+
+.page-container.horizontal-menu header.navbar ul.nav > li .horizontal-mobile-menu a{
+  border: 1px solid #ed1b2f !important;
+}
+body .entypo-menu{
+  color: #ed1b2f !important;
+}
+.form-control{
+  font-size: 12px;
+  height: 31px;
+}
+
+.not-set {
+  color: #c55;
+  font-style: italic;
+}
+
+/* add sorting icons to gridview sort links */
+a.asc:after, a.desc:after {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  padding-left: 5px;
+}
+
+a.asc:after {
+  content: /*"\e113"*/ "\e151";
+}
+
+a.desc:after {
+  content: /*"\e114"*/ "\e152";
+}
+
+.sort-numerical a.asc:after {
+  content: "\e153";
+}
+
+.sort-numerical a.desc:after {
+  content: "\e154";
+}
+
+.sort-ordinal a.asc:after {
+  content: "\e155";
+}
+
+.sort-ordinal a.desc:after {
+  content: "\e156";
+}
+.breadcrumb > .active{
+  font-size: 12px;
+
+}
+.breadcrumb > li a{
+  font-size: 12px;
+}
+.control-label{
+  font-size: 12px;
+}
+
+.grid-heading{
+  font-size: 20px;
+}

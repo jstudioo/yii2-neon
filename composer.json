@@ -1,0 +1,31 @@
+{
+  "name": "lambda/yii2-neon-template",
+  "description": "Neon Admin Template",
+  "type": "yii2-extension",
+  "keywords": ["lambda","yii2","extension","backend","bootstrap","admin","neon","theme","asset"],
+  "license": "None",
+  "authors": [
+    {
+      "name": "Lambda Consulting",
+      "email": "lambdaconsulting2016@gmail.com",
+      "homepage": "https://github.com/lambdaconsulting/yii2-neon-backend",
+      "role": "Creator"
+    }
+  ],
+  "require": {
+    "php": ">=5.4.0",
+    "yiisoft/yii2": "~2.0.0",
+	"yiisoft/yii2-bootstrap": "~2.0.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "lambda\\neon\\": ""
+    }
+  },
+  "extra": {
+    "asset-installer-paths": {
+      "npm-asset-library": "vendor/npm",
+      "bower-asset-library": "vendor/bower"
+    }
+  }
+}
