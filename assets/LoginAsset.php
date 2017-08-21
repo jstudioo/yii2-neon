@@ -18,8 +18,8 @@ class LoginAsset extends AssetBundle {
 
   public $sourcePath = '@lambda/neon/assets/src';
   public $css = [
-    'src/css/login.css',
-    'src/css/animate-custom.css',
+    'css/login.css',
+    'css/animate-custom.css',
   ];
   public $js = [
   ];
