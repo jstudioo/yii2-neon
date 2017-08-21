@@ -1,5 +1,5 @@
 {
-  "name": "lambda/yii2-neon-template",
+  "name": "lambda/yii2-neon",
   "description": "Neon Admin Template",
   "type": "yii2-extension",
   "keywords": ["lambda","yii2","extension","backend","bootstrap","admin","neon","theme","asset"],
