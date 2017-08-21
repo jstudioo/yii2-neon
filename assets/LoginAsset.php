@@ -16,8 +16,7 @@ use yii\web\AssetBundle;
  */
 class LoginAsset extends AssetBundle {
 
-  public $basePath = '@webroot';
-  public $baseUrl = '@web';
+  public $sourcePath = '@lambda/neon/assets/src';
   public $css = [
     'src/css/login.css',
     'src/css/animate-custom.css',

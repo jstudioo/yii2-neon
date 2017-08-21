@@ -16,8 +16,7 @@ use yii\web\AssetBundle;
  */
 class Asset extends AssetBundle {
 
-  public $basePath = '@webroot';
-  public $baseUrl = '@web';
+  public $sourcePath = '@lambda/neon/assets/src';
   public $css = [
     'src/css/font-icons/entypo/css/entypo.css',
     'src/css/font-icons/font-awesome/css/font-awesome.css',
