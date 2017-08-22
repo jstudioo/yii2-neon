@@ -108,7 +108,7 @@ class LogBehavior extends Behavior {
       'recordAfter' => $recordAfter,
       'logInformation' => $this->_logInformation,
       'logTrail' => Json::encode(self::getLogTrail()),
-      'createdAt' => MainHelper::getCurrentDateTime(),
+      'createdAt' => Main::getCurrentDateTime(),
     ]);
 
     return $appLog->save();
