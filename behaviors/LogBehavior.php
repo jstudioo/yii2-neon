@@ -2,8 +2,8 @@
 
 namespace lambda\neon\behaviors;
 
-use app\components\Hasher;
-use app\helpers\MainHelper;
+use lambda\neon\helpers\Hasher;
+use lambda\neon\helpers\Main;
 use app\models\AppLog;
 use Yii;
 use yii\base\Behavior;
