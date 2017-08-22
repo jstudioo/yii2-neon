@@ -55,7 +55,7 @@ class GridView extends GridView {
       'class' => 'btn btn-custom-toolbar',
     ],
   ];
-  public $dataColumnClass = 'app\components\DataColumn';
+  public $dataColumnClass = 'lambda\neon\components\DataColumn';
 
   protected function initLayout() {
     Html::addCssClass($this->filterRowOptions, 'skip-export');
