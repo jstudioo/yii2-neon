@@ -2,7 +2,7 @@
   "name": "lambda/yii2-neon",
   "description": "Neon Admin Template",
   "type": "yii2-extension",
-  "keywords": ["lambda","yii2","extension","backend","bootstrap","admin","neon","theme","asset"],
+  "keywords": ["lambda", "yii2", "extension", "backend", "bootstrap", "admin", "neon", "theme", "asset"],
   "license": "None",
   "authors": [
     {
@@ -15,7 +15,18 @@
   "require": {
     "php": ">=5.4.0",
     "yiisoft/yii2": "~2.0.0",
-	"yiisoft/yii2-bootstrap": "~2.0.0"
+    "yiisoft/yii2-bootstrap": "~2.0.0",
+    "yii2tech/ar-softdelete": "^1.0@dev",
+    "xj/yii2-bootbox-widget": "dev-master",
+    "hashids/hashids": "^1.0",
+    "firephp/firephp-core": "^0.4.0",
+    "kartik-v/yii2-grid": "^3.1",
+    "kartik-v/yii2-widget-select2": "^2.0",
+    "kartik-v/yii2-widget-fileinput": "@dev",
+    "kartik-v/yii2-widget-datepicker": "^1.4@dev",
+    "kartik-v/yii2-widget-alert": "^1.1",
+    "kartik-v/yii2-widget-activeform": "^1.4@dev",
+    "yiisoft/yii2-imagine": "^2.0@dev"
   },
   "autoload": {
     "psr-4": {
