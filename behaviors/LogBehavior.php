@@ -2,17 +2,13 @@
 
 namespace lambda\neon\behaviors;
 
-use lambda\neon\helpers\Hasher;
-use lambda\neon\helpers\Main;
-use app\models\AppLog;
+use lambda\neon\models\AppLog;
 use Yii;
 use yii\base\Behavior;
 use yii\db\ActiveRecord;
 use yii\helpers\Json;
 
 class LogBehavior extends Behavior {
-
-  const IS_RECORDED = TRUE;
 
   private $dataBefore;
   public $_logInformation;
@@ -27,11 +23,7 @@ class LogBehavior extends Behavior {
   }
 
   public function setOldAttributes() {
-    $this->dataBefore = Json::encode($this->getAttributes());
-  }
-
-  private function getCurrentDate() {
-    return Main::getCurrentDate();
+    $this->dataBefore = $this->owner->isNewRecord ? Json::encode($this->getAttributes()) : NULL;
   }
 
   private function getOldAttributes() {
@@ -43,59 +35,49 @@ class LogBehavior extends Behavior {
   }
 
   private static function getHostName() {
-    return gethostname() ? : FALSE;
+    return gethostname() ? : NULL;
   }
 
   private static function getHostInfo() {
-    return Yii::$app->request->hostInfo ? : FALSE;
+    return Yii::$app->request->hostInfo ? : NULL;
   }
 
   private static function getPortRequest() {
-    return Yii::$app->request->port ? : FALSE;
+    return Yii::$app->request->port ? : NULL;
   }
 
   private static function getUrl() {
-    return \Yii::$app->request->url ? : FALSE;
+    return \Yii::$app->request->url ? : NULL;
   }
 
   private static function getUserHost() {
-    return Yii::$app->request->userHost ? : FALSE;
+    return Yii::$app->request->userHost ? : NULL;
   }
 
   private static function getUserIP() {
-    return Yii::$app->request->userIP ? : FALSE;
+    return Yii::$app->request->userIP ? : NULL;
   }
 
   private static function getUserAgent() {
-    Yii::$app->request->userAgent ? : FALSE;
+    Yii::$app->request->userAgent ? : NULL;
   }
 
   private static function getUserIdentityClass() {
-    return \Yii::$app->user->identityClass ? : FALSE;
+    return \Yii::$app->user->identityClass ? : NULL;
   }
 
   private static function getUserId() {
-
-    return \Yii::$app->user->isGuest ? FALSE : \Yii::$app->user->id;
-  }
-
-  private static function getLogTrail() {
-    return [
-      'hostName' => self::getHostName(),
-      'hostInfi' => self::getHostInfo(),
-      'portRequest' => self::getPortRequest(),
-      'url' => self::getUrl(),
-      'userHost' => self::getUserHost(),
-      'userIP' => self::getUserIP(),
-      'userAgent' => self::getUserAgent()
-    ];
+    return !\Yii::$app->user->isGuest ? \Yii::$app->user->id : NULL;
   }
 
   public function behaviorRecord($userAction) {
     $recordBefore = Json::encode($this->getOldAttributes());
     $recordAfter = Json::encode($this->getAttributes());
 
-    $logCode = $this->_logCode ? : Hasher::encode($this->owner->id) . '-' . time();
+    $logCode = $this->_logCode;
+
+    $logTrail = ['hostName' => self::getHostName(), 'hostInfo' => self::getHostInfo(), 'portRequest' => self::getPortRequest(), 'url' => self::getUrl(), 'userHost' => self::getUserHost(), 'userIP' => self::getUserIP(), 'userAgent' => self::getUserAgent()];
+
     $appLog = new AppLog([
       'logCode' => $logCode,
       'tableName' => $this->owner->tableName(),
@@ -107,8 +89,8 @@ class LogBehavior extends Behavior {
       'recordBefore' => $recordBefore,
       'recordAfter' => $recordAfter,
       'logInformation' => $this->_logInformation,
-      'logTrail' => Json::encode(self::getLogTrail()),
-      'createdAt' => Main::getCurrentDateTime(),
+      'logTrail' => Json::encode($logTrail),
+      'createdAt' => date('Y-m-d H:i:s'),
     ]);
 
     return $appLog->save();
