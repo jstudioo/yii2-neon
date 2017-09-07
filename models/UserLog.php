@@ -19,7 +19,7 @@ use Yii;
  *
  * @property User $user
  */
-class UserLog extends \app\models\Base {
+class UserLog extends ActiveRecord {
 
   /**
    * @inheritdoc
@@ -47,10 +47,10 @@ class UserLog extends \app\models\Base {
   public function attributeLabels() {
     return [
       'id' => Yii::t('app', 'ID'),
-      'userId' => Yii::t('app', 'User ID'),
+      'userId' => Yii::t('app', 'User'),
       'activity' => Yii::t('app', 'Activity'),
-      'userIP' => Yii::t('app', 'User Ip'),
-      'userHost' => Yii::t('app', 'User Host'),
+      'userIP' => Yii::t('app', 'IP Address'),
+      'userHost' => Yii::t('app', 'Host'),
       'portRequest' => Yii::t('app', 'Port Request'),
       'hostName' => Yii::t('app', 'Host Name'),
       'userAgent' => Yii::t('app', 'User Agent'),

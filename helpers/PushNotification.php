@@ -8,10 +8,6 @@
 
 namespace lambda\neon\helpers;
 
-use paragraph1\phpFCM\Recipient\Device;
-use paragraph1\phpFCM\Recipient\Topic;
-use Yii;
-
 /**
  * Description of Notification
  *
