@@ -161,12 +161,10 @@ class ActiveRecord extends YiiDbActiveRecord {
    */
 
   public function generateFeedback($message = FALSE, $mode = 1, $key = 'feedback-warning') {
-
-    if (!$message) {
-      $message = ($mode == self::FEEDBACK_MODE_SAVE) ? Yii::t('neon', 'Record has saved successfully') : Yii::t('neon', 'Record status has changed to {recordStatus}', ['recordStatus' => $this->isDeleted ? Yii::t('neon', 'deleted') : Yii::t('neon', 'restored')]);
+    if (($message && is_bool($message)) || !is_bool($message)) {
+      $message = ($mode == self::FEEDBACK_MODE_SAVE) ? Yii::t('app', 'Record has saved successfully') : Yii::t('app', 'Record status has changed to {recordStatus}', ['recordStatus' => $this->isDeleted ? Yii::t('app', 'deleted') : Yii::t('app', 'restored')]);
+      Yii::$app->session->setFlash($key, $message);
     }
-
-    return Yii::$app->session->setFlash($key, $message);
   }
 
   public function saveRecord($feedback = TRUE, $validation = TRUE, $logInformation = FALSE, $logCode = FALSE) {
@@ -340,6 +338,14 @@ class ActiveRecord extends YiiDbActiveRecord {
 
   public function getCreator() {
     return $this->hasOne(User::className(), ['id' => 'createdBy']);
+  }
+
+  public function getUpdater() {
+    return $this->hasOne(User::className(), ['id' => 'updatedBy']);
+  }
+
+  public function getDeleter() {
+    return $this->hasOne(User::className(), ['id' => 'deletedBy']);
   }
 
   public static function findActive() {

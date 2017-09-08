@@ -7,13 +7,14 @@
 namespace lambda\neon\components;
 
 use yii\bootstrap\Html;
+use kartik\form\ActiveForm as KartikActiveForm;
 
 /**
  * Description of ActiveForm
  *
  * @author Mohammad Nadzif <nadzif.lambda@gmail.com>
  */
-class ActiveForm extends \kartik\form\ActiveForm {
+class ActiveForm extends KartikActiveForm {
 
   public $type = 'horizontal';
   public $formConfig = [

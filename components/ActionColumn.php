@@ -9,8 +9,9 @@ use yii\helpers\ArrayHelper;
 use yii\helpers\Html;
 use yii\helpers\Json;
 use yii\helpers\Url;
+use kartik\grid\ActionColumn as KartikActionColumn;
 
-class ActionColumn extends \kartik\grid\ActionColumn {
+class ActionColumn extends KartikActionColumn {
 
   public $template = '{detail} {update} {delete}';
   public $header = 'Option';
