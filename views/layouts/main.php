@@ -1,13 +1,13 @@
 <?php
 
 use yii\widgets\Breadcrumbs;
-use app\assets\AppAsset;
+use lambda\neon\assets\Asset;
 use yii\bootstrap\Html;
 use xj\bootbox\BootboxAsset;
 use kartik\alert\Alert;
 use yii\bootstrap\Modal;
 
-AppAsset::register($this);
+Asset::register($this);
 
 BootboxAsset::registerWithOverride($this);
 $userIdentity = Yii::$app->user->isGuest ? FALSE : Yii::$app->user->identity;

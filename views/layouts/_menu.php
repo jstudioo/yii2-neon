@@ -1,6 +1,6 @@
 <?php
 
-use app\components\Menu;
+use lambda\neon\components\Menu;
 use yii\bootstrap\Html;
 
 $dashboardMenu = [

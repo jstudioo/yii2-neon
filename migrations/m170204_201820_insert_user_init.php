@@ -1,6 +1,5 @@
 <?php
 
-use app\helpers\MainHelper;
 use yii\db\Migration;
 
 class m170204_201820_insert_user_init extends Migration {
@@ -31,7 +30,7 @@ class m170204_201820_insert_user_init extends Migration {
       'passwordHash' => Yii::$app->security->generatePasswordHash('lambdaTesseract'),
       'configLanguage' => 'en',
       'configTheme' => 'default',
-      'createdAt' => MainHelper::getCurrentDate(),
+      'createdAt' => date('Y-m-d H:i:s'),
     ]);
 
     $this->insert('{{%user}}', [
@@ -49,7 +48,7 @@ class m170204_201820_insert_user_init extends Migration {
       'passwordHash' => Yii::$app->security->generatePasswordHash('lambdaTesseract'),
       'configLanguage' => 'en',
       'configTheme' => 'default',
-      'createdAt' => MainHelper::getCurrentDate(),
+      'createdAt' => date('Y-m-d H:i:s'),
     ]);
 
     $this->insert('{{%user}}', [
@@ -67,7 +66,7 @@ class m170204_201820_insert_user_init extends Migration {
       'passwordHash' => Yii::$app->security->generatePasswordHash('lambdaTesseract'),
       'configLanguage' => 'en',
       'configTheme' => 'default',
-      'createdAt' => MainHelper::getCurrentDate(),
+      'createdAt' => date('Y-m-d H:i:s'),
     ]);
 
     Yii::$app->runAction('migrate', ['migrationPath' => '@yii/rbac/migrations/']);

@@ -1,6 +1,6 @@
 <?php
 
-use app\components\GridView;
+use lambda\neon\components\GridView;
 
 if (isset($searchClass)) {
   $searchModel = Yii::createObject($searchClass);

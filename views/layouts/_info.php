@@ -1,6 +1,6 @@
 <?php
 
-use common\components\DetailView;
+use lambda\neon\components\DetailView;
 
 if ($detailModel) {
   $detailConfig = [
